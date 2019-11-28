@@ -1,314 +1,495 @@
 {
-  "transactions": [
-    {
-      "id":9,
-      "transaction_type":"vv-a11",
-      "amount":"20 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Submitted"
+    "data": {
+        "templateId": 4,
+        "targetGroup": "C",
+        "parts": {
+            "part1": [
+                {
+                    "reminders": [
+                        {
+                            "timesADay": 1,
+                            "fireAt": "08:00PM",
+                            "title": "Daily Stools Report",
+                            "desc": "Please send DSR",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "55",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE"
+                                }
+                            ],
+                            "dueDays": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10
+                            ]
+                        },
+                        {
+                            "timesADay": 3,
+                            "fireAt": "07:00AM",
+                            "desc": "Time to take Vancomycin",
+                            "title": "Vancomycin",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": 17107,
+                                    "type": "CLINICAL_TRIAL_E_MEDICATION",
+                                    "instruction": "Take 3x/day (early morning, mid-afternoon, bedtime) for 10 days. Can be given with a snack or  meal.Use the syringe to carefully measure out the correct dose.Call the study coordinator if you have any questions."
+                                }
+                            ],
+                            "dueDays": [
+                                1,
+                                2,
+                                3,
+                                4,
+                                5,
+                                6,
+                                7,
+                                8,
+                                9,
+                                10
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "recipient": "patient",
+                            "desc": "Time to take a questionnaire",
+                            "dueDays": [
+                                10
+                            ],
+                            "items": [
+                                {
+                                    "id": "50",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE",
+                                    "dueTime": "11:00AM"
+                                },
+                                {
+                                    "id": "53",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE",
+                                    "dueTime": "02:00PM"
+                                },
+                                {
+                                    "id": "56",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE",
+                                    "dueTime": "08:00PM"
+                                }
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Local Clinic appoiontment",
+                            "desc": "Time to set a meeting at your local clinic for Urine and Stools tests",
+                            "recipient": "patient",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                8
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "reminders": [
+                        {
+                            "timesADay": 2,
+                            "fireAt": "07:00AM",
+                            "title": "Magnesium Citrate",
+                            "desc": "Time to take Magnesium Citrate",
+                            "recipient": "patient",
+                            "dueDays": [
+                                11
+                            ],
+                            "items": [
+                                {
+                                    "id": 14027,
+                                    "type": "CLINICAL_TRIAL_E_MEDICATION",
+                                    "instruction": "Light breakfast - (cereal, milk, toast, eggs, juice, fruit) No lunch or dinner Drink plenty of calorie-containing clear liquids (primarily fruit juice (no pulp) Gatorade, 7-UP and broth).  Some water is ok, but most of the liquids should contain electrolytes and calories.  Drink at least 4 large 12-ounce glasses throughout the day. Avoid liquids that are not clear or that contain solids, such as milk, soup, smoothies, protein drinks Early afternoon (typically noon or 1 pm) 1st Dose of Magnesium Citrate.  Follow it with 8 ounces of water or calorie-containing clear liquid. Expect to have loose bowels within 30 minutes to 3 hours. Late afternoon/early evening  (approximately 3-4 hours after 1st dose) 2nd Dose of Magnesium Citrate.  Follow it with 8 ounces of water or calorie-containing clear liquid. Expect to have loose bowels within 30 minutes to 3 hours. Bowel movement should eventually be clear liquid. Call the study coordinator if you have any questions.  If you do not observe clear liquid stools within 3 hours after the 2nd dose, call the study coordinator ASAP."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "reminders": [
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Video call appoiontment",
+                            "desc": "Time to set a video call",
+                            "recipient": "doctor",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                12
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "08:00PM",
+                            "title": "Daily Stools Report",
+                            "desc": "Please send DSR",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "55",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE"
+                                }
+                            ],
+                            "dueDays": [
+                                12,
+                                13,
+                                14,
+                                15
+                            ]
+                        },
+                        {
+                            "timesADay": 2,
+                            "fireAt": "07:00AM",
+                            "title": "Microbiota Capsules",
+                            "desc": "Time to take study Microbiota Capsules",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": 32265,
+                                    "type": "CLINICAL_TRIAL_E_MEDICATION",
+                                    "instruction": "1st Dose: Early morning:  Take Microbiota Capsules upon waking; wait 1 hour before eating breakfast or drinking (only water is allowed). 2nd Dose: Mid-afternoon:   Wait two hours or more after last snack/meal, and then take Microbiota Capsules with at least 2 ounces of water.  Wait one hour before eating or drinking (only water is allowed). Take the number of capsules prescribed by the pharmacist."
+                                }
+                            ],
+                            "dueDays": [
+                                12,
+                                13,
+                                14,
+                                15
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "08:00PM",
+                            "title": "MT adverse effect",
+                            "desc": "Some text here",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "51",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE"
+                                }
+                            ],
+                            "dueDays": [
+                                12,
+                                13,
+                                14,
+                                15
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "reminders": [
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Video call appoiontment",
+                            "desc": "Time to set a video call",
+                            "recipient": "doctor",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                16,
+                                45
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "08:00PM",
+                            "title": "Daily Stools Report",
+                            "desc": "Please send DSR",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "55",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE"
+                                }
+                            ],
+                            "dueDays": [
+                                16,
+                                17,
+                                18,
+                                19,
+                                20,
+                                21,
+                                22,
+                                23,
+                                24,
+                                25,
+                                26,
+                                27,
+                                28,
+                                29,
+                                30,
+                                31,
+                                32,
+                                33,
+                                34,
+                                35,
+                                36,
+                                37,
+                                38,
+                                39,
+                                40,
+                                41,
+                                42,
+                                43,
+                                44,
+                                45,
+                                46,
+                                47,
+                                48,
+                                49,
+                                50,
+                                51,
+                                52,
+                                53,
+                                54,
+                                55,
+                                56,
+                                57,
+                                58,
+                                59,
+                                60,
+                                61,
+                                62,
+                                63,
+                                64,
+                                65,
+                                66,
+                                67,
+                                68,
+                                69,
+                                70,
+                                71,
+                                72,
+                                73,
+                                74,
+                                75,
+                                76,
+                                77,
+                                78,
+                                79,
+                                80,
+                                81,
+                                82,
+                                83,
+                                84,
+                                85,
+                                86,
+                                87,
+                                88,
+                                89,
+                                90,
+                                91,
+                                92,
+                                93,
+                                94,
+                                95,
+                                96,
+                                97,
+                                98,
+                                99
+                            ]
+                        },
+                        {
+                            "timesADay": 2,
+                            "fireAt": "07:00AM",
+                            "desc": "Time to take Microbiota Capsules",
+                            "title": "Microbiota Capsules",
+                            "daysInterval": 4,
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": 32265,
+                                    "type": "CLINICAL_TRIAL_E_MEDICATION",
+                                    "instruction": "Take 1 Microbiota Capsule every four days (Day 16, 20, 24, etc.) Take it upon waking with at least 2 ounces of water; wait 1 hour before eating breakfast or drinking (only water is allowed). IMPORTANT DO NOT OPEN THE CAPSULE – it must be swallowed intact, to protect the bacteria from stomach acid Refrigeration:  Keep the microbiota in the refrigerator at all times, except to open the bottle and briefly remove dosage.  Take dose within 15 minutes of removing from refrigerator.  Do not expose to any heat. Keep Dry:  Keep all capsules in the container with the desiccant.  Seal the container tightly after each use. Avoid Heat:  If microbiota capsule is exposed to any heat above room temperature, or is left at room temperature for more than 60 minutes – CONTACT YOUR STUDY COORDINATOR Avoid placing microbiota capsules near hot spots (oven/stove/toaster, or leaving in hot cars), and keep refrigerated.  Even a brief dose of heat above room temperature may destroy the bacteria.  Request a replacement dose if there are any concerns. Call the study coordinator if you have any questions."
+                                }
+                            ],
+                            "dueDays": [
+                                16,
+                                20,
+                                24,
+                                28,
+                                32,
+                                36,
+                                40,
+                                44,
+                                48,
+                                52,
+                                56,
+                                60,
+                                64,
+                                68,
+                                72,
+                                76,
+                                80,
+                                84,
+                                88,
+                                92,
+                                96
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "09:00PM",
+                            "title": "MT adverse effect",
+                            "desc": "Please send MT adverse effect",
+                            "recipient": "patient",
+                            "dueDays": [
+                                16,
+                                17,
+                                18
+                            ],
+                            "items": [
+                                {
+                                    "id": "51",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE"
+                                }
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Measurement report",
+                            "dueDays": [
+                                16
+                            ],
+                            "desc": "Some text here",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "12345",
+                                    "type": "CLINICAL_TRIAL_E_MEASUREMENT"
+                                }
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "11:00AM",
+                            "title": "Measurement report",
+                            "dueDays": [
+                                16
+                            ],
+                            "desc": "Some text here",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "12345",
+                                    "type": "CLINICAL_TRIAL_E_MEASUREMENT"
+                                }
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Measurement report",
+                            "dueDays": [
+                                16
+                            ],
+                            "desc": "Some text here",
+                            "recipient": "patient",
+                            "items": [
+                                {
+                                    "id": "12345",
+                                    "type": "CLINICAL_TRIAL_E_MEASUREMENT"
+                                }
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "09:00PM",
+                            "recipient": "patient",
+                            "dueDays": [
+                                24,
+                                38,
+                                52,
+                                66,
+                                80,
+                                94
+                            ],
+                            "items": [
+                                {
+                                    "id": "50",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE",
+                                    "dueTime": "07:00PM"
+                                },
+                                {
+                                    "id": "53",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE",
+                                    "dueTime": "08:00PM"
+                                },
+                                {
+                                    "id": "56",
+                                    "type": "CLINICAL_TRIAL_E_DYNAMIC_QUESTIONNAIRE",
+                                    "dueTime": "09:00PM"
+                                }
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Local clinit meeting",
+                            "desc": "Time to set meeting at your local clinic for Blood, buccal swab",
+                            "recipient": "patient",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                99
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Local Clinic appoiontment",
+                            "desc": "Time to set an appointment at your local clinic for Urine and Stools tests",
+                            "recipient": "patient",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                24,
+                                94
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Clinic appoiontment",
+                            "desc": "Physical Exam, test for pill swallowing, and CGI",
+                            "recipient": "patient",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                98
+                            ]
+                        },
+                        {
+                            "timesADay": 1,
+                            "fireAt": "07:00AM",
+                            "title": "Clinic appoiontment",
+                            "desc": "AE monitoring by physician",
+                            "recipient": "patient",
+                            "type": "CLINICAL_TRIAL_E_MEETING",
+                            "dueDays": [
+                                98
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "id": "5daeb527639b67727e441de8",
+        "goalDescription": "Microbiota Transfer Therapy - Part 1 ",
+        "generalGoal": "Pitt Hopkins Syndrome Microbiota Transfer Therapy Project",
+        "type": "CLINICAL_TRIAL"
     },
-    {
-      "id":8,
-      "transaction_type":"Bdp-b33",
-      "amount":"20 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Rejected"
-    },
-    {
-      "id":7,
-      "transaction_type":"dd-b33",
-      "amount":"20 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Accepted"
-    },
-    {
-      "id":6,
-      "transaction_type":"aa-a321",
-      "amount":"33 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Submitted"
-    },
-    {
-      "id":5,
-      "transaction_type":"vv-a11",
-      "amount":"20 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Submitted"
-    },
-    {
-      "id":4,
-      "transaction_type":"Bdp-b33",
-      "amount":"20 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Rejected"
-    },
-    {
-      "id":3,
-      "transaction_type":"dd-b33",
-      "amount":"20 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Accepted"
-    },
-    {
-      "id":2,
-      "transaction_type":"aa-a321",
-      "amount":"33 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Submitted"
-    },
-    {
-      "id":1,
-      "transaction_type":"aa-a321",
-      "amount":"33 BDPA",
-      "transaction":"BidiPass Block Exchange",
-      "to":"0x32Be343B94f860124dC4fEe278FDasdas",
-      "date":"11/11/2011",
-      "status":"Accepted"
-    }
-  ],
-  "contracts":[  
-      {  
-         "id":9,
-         "providerName":"Provider Name",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free"
-      },
-      {  
-         "id":8,
-         "providerName":"Provider Name2",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free"
-      },
-      {  
-         "id":7,
-         "providerName":"Provider Name2",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free"
-      },
-      {  
-         "id":6,
-         "providerName":"Provider Name3",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free Authorization"
-      },
-      {  
-         "id":5,
-         "providerName":"Provider Name4",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free"
-      },
-      {  
-         "id":4,
-         "providerName":"Provider Name5",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free"
-      },
-      {  
-         "id":3,
-         "providerName":"Provider Name6",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Free"
-      },
-      {  
-         "id":2,
-         "providerName":"Provider Name7",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Paid"
-      },
-      {  
-         "id":1,
-         "providerName":"Provider Name7",
-         "avatar":"default",
-         "contractLink":"0x32Be343B94f860124dC4fEe278FDCBD38C102D88",
-         "mfaUsers":24000,
-         "fee":3,
-         "symbol":"BDP",
-         "plan":"Paid"
-      }
-   ],
-  "ledgerCollection":[  
-   {  
-      "id":9,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Debit",
-      "status":"Send"
-   },
-   {  
-      "id":8,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"iOS",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"None",
-      "date":"11/11/2011",
-      "actionType":"Credit",
-      "status":"Approve"
-   },
-   {  
-      "id":7,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Generic",
-      "status":"Rejected"
-   },
-   {  
-      "id":6,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Generic",
-      "status":"Canceled"
-   },
-   {  
-      "id":5,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Generic",
-      "status":"Accepted"
-   },
-   {  
-      "id":4,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Generic",
-      "status":"Accepted"
-   },
-   {  
-      "id":3,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Debit",
-      "status":"Send"
-   },
-   {  
-      "id":2,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"Android",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"BDPU",
-      "date":"11/11/2011",
-      "actionType":"Generic",
-      "status":"Declined"
-   },
-   {  
-      "id":1,
-      "provider":"ABC Exchange",
-      "userId":123121,
-      "transactionId":242124,
-      "platform":"iOS",
-      "amount":200,
-      "symbol":"ETH",
-      "denomination":18,
-      "rewardPaid":3,
-      "rewardPaidSymbol":"None",
-      "date":"11/11/2011",
-      "actionType":"Debit",
-      "status":"Send"
-   }
-]
+    "error": null
 }
